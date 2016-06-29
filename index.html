@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas</title>
+</head>
+<body>
+	<canvas id="canvas" width="200" height="200"></canvas>
+	<script src="lib/canvas.min.js"></script>
+	<script>
+		window.onload = function() {
+			new Canvas('canvas').init().createGradient(false, 10, 10, 200, 100, 100, 30, [0.1,"red",0.4,"black",0.6,"#ddec26",0.9,"blue",1]).fillStyle().fillRect(10,10,200,200);
+		}
+	</script>
+</body>
+</html>
